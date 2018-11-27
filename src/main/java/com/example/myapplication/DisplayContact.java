@@ -1,7 +1,7 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 import android.app.AlertDialog;
 
 import android.content.DialogInterface;
@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class DisplayContact extends Activity {
+public class DisplayContact extends AppCompatActivity {
     int from_Where_I_Am_Coming = 0;
     private DBHelper mydb ;
 
@@ -36,6 +36,7 @@ public class DisplayContact extends Activity {
         email = (TextView) findViewById(R.id.editTextStreet);
         street = (TextView) findViewById(R.id.editTextEmail);
         place = (TextView) findViewById(R.id.editTextCity);
+
 
         mydb = new DBHelper(this);
 
@@ -58,6 +59,7 @@ public class DisplayContact extends Activity {
                 if (!rs.isClosed())  {
                     rs.close();
                 }
+
                 Button b = (Button)findViewById(R.id.button1);
                 b.setVisibility(View.INVISIBLE);
 
@@ -81,12 +83,12 @@ public class DisplayContact extends Activity {
                 place.setFocusable(false);
                 place.setClickable(false);
             }
+
         }
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-
         // Inflate the menu; this adds items to the action bar if it is present.
         Bundle extras = getIntent().getExtras();
 
@@ -95,7 +97,7 @@ public class DisplayContact extends Activity {
             if(Value>0){
                 getMenuInflater().inflate(R.menu.display_contact, menu);
             } else{
-                getMenuInflater().inflate(R.menu.main_menu, menu);
+                getMenuInflater().inflate(R.menu.main_menu ,menu);
             }
         }
         return true;
