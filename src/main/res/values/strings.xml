@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Address Bok</string>
+    <string name="app_name">Wi-Fix</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="Add_New">Add New</string>
@@ -11,7 +11,7 @@
     <string name="phone">Phone</string>
     <string name="email">Email</string>
     <string name="street">Street</string>
-    <string name="country">City/State/Zip</string>
+    <string name="country">Type of Service</string>
     <string name="save">Save Contact</string>
     <string name="deleteContact">Are you sure, you want to delete it.</string>
     <string name="yes">Yes</string>
