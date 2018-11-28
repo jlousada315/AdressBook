@@ -74,10 +74,5 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public boolean onKeyDown(int keycode, KeyEvent event) {
-        if (keycode == KeyEvent.KEYCODE_BACK) {
-            moveTaskToBack(true);
-        }
-        return super.onKeyDown(keycode, event);
-    }
+
 }
