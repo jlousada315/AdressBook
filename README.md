@@ -13,4 +13,7 @@ Next Steps:
   Better Graphic Display ;
   Online Database;
   More Activities to add Dynamics.
+  
+  Last Update:
+    The app now has a menu with Image Buttons that allow you to surf between all functionalities and come back to it. 
 
