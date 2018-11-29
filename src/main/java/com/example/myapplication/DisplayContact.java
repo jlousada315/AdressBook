@@ -140,7 +140,7 @@ public class DisplayContact extends AppCompatActivity {
                                 mydb.deleteContact(id_To_Update);
                                 Toast.makeText(getApplicationContext(), "Deleted Successfully",
                                         Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                                Intent intent = new Intent(getApplicationContext(),Desktop.class);
                                 startActivity(intent);
                             }
                         })
