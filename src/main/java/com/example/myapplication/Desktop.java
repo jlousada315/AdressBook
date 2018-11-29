@@ -34,6 +34,13 @@ public class Desktop  extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //initializes Second activity
+    public void launchMapsActivity(View view) {
+        Log.d(LOG_TAG, "Button clicked!");
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
+    }
+
     //moves activity to the back of the activities stack
     public boolean onKeyDown(int keycode, KeyEvent event) {
         if (keycode == KeyEvent.KEYCODE_BACK) {
